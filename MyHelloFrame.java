@@ -10,7 +10,7 @@ import java.awt.event.*;
 public class MyHelloFrame extends JFrame
 {
     public Object mp;
-
+    private final int FLYING_UNIT = 10;
     public MyHelloFrame()
     {
         
