@@ -9,7 +9,7 @@ import java.awt.event.*;
  */
 public class MyHelloFrame extends JFrame
 {
-    public JPanel mp;
+    public Object mp;
 
     public MyHelloFrame()
     {
@@ -18,7 +18,7 @@ public class MyHelloFrame extends JFrame
         this.setSize(300,400);
         
         mp = new MyHelloPanelListener();
-        this.add(mp);
+        this.add((JPanel)mp);
         
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 
