@@ -6,7 +6,7 @@ import java.awt.event.*;
  * @author (작성자 이름) 
  * @version (버전번호나 날짜)
  */
-public class MyHelloPanelListener extends JPanel implements MouseListener 
+public class MyHelloPanelListener extends KeyAdapter implements MouseListener 
 {
     public JLabel label;
     public void mousePressed(MouseEvent e){
@@ -18,5 +18,9 @@ public class MyHelloPanelListener extends JPanel implements MouseListener
     public void mouseClicked(MouseEvent e){}
     public void mouseEntered(MouseEvent e){}
     public void mouseExited(MouseEvent e){}
-    
+    public MyHelloPanelListener()
+    {
+       label = new JLabel("HELLO");
+       
+    }
 }
