@@ -9,18 +9,19 @@ import java.awt.event.*;
  */
 public class MyHelloFrame extends JFrame
 {
-    public JLabel ML;
+    public JPanel mp;
+
     public MyHelloFrame()
     {
         
         this.setTitle("실습_3(2019.11.11)");
         this.setSize(300,400);
         
-        //ML = new MyHelloPanelListener();
-        this.add(ML);
+        mp = new MyHelloPanelListener();
+        this.add(mp);
         
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
+                
         this.setVisible(true);
     }
 }
